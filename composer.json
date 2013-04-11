@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Robbo\\Schema": "src/"
+            "Robbo\\SchemaBuilder": "src/"
         }
     },
     "extra": {
