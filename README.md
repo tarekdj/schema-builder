@@ -2,9 +2,13 @@
 
 This is a port of [http://github.com/illuminate/database](illuminate/database) to provide the schema builder without all the extra features.
 
+[![Build Status](https://secure.travis-ci.org/robclancy/db-connector.png)](http://travis-ci.org/robclancy/db-connector)
+
+
 The idea behind this is allowing the scheme builder to be used in projects that already have a database layer that uses `PDO`.
 
-All you need to use this is a `PDO` instance. If you create it manually you might want to consider using [http://github.com/robclancy/db-connector](robclancy/db-connector) which is another fork of [http://github.com/illuminate/database](illuminate/database) but to just connect to the database. With your PDO instance you create a `Robbo\SchemaBuilder\Connection` instance and then call `->getSchemaBuilder()` to get started. Then you use the builder as described in the [http://four.laravel.com/docs/schema](Laravel docs) however substitute your instance for `Schema::`.
+All you need to use this is a `PDO` instance. If you create it manually you might want to consider using [http://github.com/robclancy/db-connector](robclancy/db-connector) which is another fork of [http://github.com/illuminate/database](illuminate/database) but to just connect to the database. 
+With your PDO instance you create a `Robbo\SchemaBuilder\Connection` instance and then call `->getSchemaBuilder()` to get started. Then you use the builder as described in the [http://four.laravel.com/docs/schema](Laravel docs) however substitute your instance for `Schema::`.
 
 ## Installation
 
