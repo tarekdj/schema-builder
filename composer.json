@@ -1,6 +1,6 @@
 {
     "name": "robclancy/schema-builder",
-    "description": "Fork of illuminate/database for using the schema builder.",
+    "description": "Fork of illuminate/database to use the schema builder alone.",
     "keywords": ["schema", "database", "sql"],
     "authors": [
         {
