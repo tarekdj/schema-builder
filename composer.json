@@ -1,6 +1,6 @@
 {
-    "name": "illuminate/database",
-    "description": "An elegant database abstraction library.",
+    "name": "robclancy/schema-builder",
+    "description": "Fork of illuminate/database for using the schema builder.",
     "keywords": ["schema", "database", "sql"],
     "authors": [
         {
@@ -16,7 +16,7 @@
         "phpunit/phpunit": "3.7.*"
     },
     "suggests": {
-        "robclancy/db-connector": "*"
+        "robclancy/db-connector": "1.0.x"
     },
     "autoload": {
         "psr-0": {
