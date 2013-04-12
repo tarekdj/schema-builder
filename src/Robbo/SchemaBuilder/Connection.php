@@ -415,4 +415,34 @@ class Connection implements ConnectionInterface {
 
 		return $grammar;
 	}
+
+	/**
+	 * Create a new connection instance.
+	 *
+	 * @param  string  $driver
+	 * @param  PDO     $connection
+	 * @param  string  $database
+	 * @param  string  $tablePrefix
+	 * @param  string  $config
+	 * @return \Illuminate\Database\Connection
+	 */
+	public static function create($driver, PDO $connection, $database, $tablePrefix = '', $config = null)
+	{
+		switch ($driver)
+		{
+			case 'mysql':
+				return new Connection\MySqlConnection($connection, $database, $tablePrefix, $config);
+
+			case 'pgsql':
+				return new Connection\PostgresConnection($connection, $database, $tablePrefix, $config);
+
+			case 'sqlite':
+				return new Connection\SQLiteConnection($connection, $database, $tablePrefix, $config);
+
+			case 'sqlsrv':
+				return new Connection\SqlServerConnection($connection, $database, $tablePrefix, $config);
+		}
+
+		throw new \InvalidArgumentException("Unsupported driver [$driver]");
+	}
 }
