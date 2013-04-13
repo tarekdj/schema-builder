@@ -426,7 +426,7 @@ class Connection implements ConnectionInterface {
 	 * @param  string  $config
 	 * @return \Illuminate\Database\Connection
 	 */
-	public static function create($driver, PDO $connection, $database, $tablePrefix = '', $config = null)
+	public static function create($driver, PDO $connection, $database, $tablePrefix = '', array $config = array())
 	{
 		switch ($driver)
 		{
