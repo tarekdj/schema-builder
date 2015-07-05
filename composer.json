@@ -1,11 +1,11 @@
 {
-    "name": "robclancy/schema-builder",
-    "description": "Fork of illuminate/database to use the schema builder alone.",
+    "name": "tarekdj/schema-builder",
+    "description": "Fork of illuminate/database to use the schema builder alone. Based on Robert Clancy's work. See https://github.com/robclancy/schema-builder/",
     "keywords": ["schema", "database", "sql"],
     "authors": [
         {
-            "name": "Robert Clancy",
-            "email": "mail@robertclancy.net"
+            "name": "Tarek Djebali",
+            "email": "tarekdj@gmail.com"
         }
     ],
     "require": {
